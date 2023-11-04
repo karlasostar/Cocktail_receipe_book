@@ -2,10 +2,19 @@
     <string name="app_name">Cocktail receipe book</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label">Meni</string>
+    <string name="second_fragment_label">Lista favorita</string>
+    <string name="third_fragment_label">Ime mog novog koktela</string>
+
+    <string name="favoriti">Favoriti</string>
+    <string name="dodaj">Stvori svoj koktel</string>
+
+    <string name="previous">Natrag</string>
+
+    <string name="my_list">OVDJE IDE LISTA FAVORITA</string>
+
+    <string name="dodaj_fav">Dodaj u favorite</string>
+
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris

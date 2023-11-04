@@ -6,25 +6,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.cocktailreceipebook.databinding.FragmentFirstBinding
+import com.example.cocktailreceipebook.databinding.FragmentThirdBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
-class FirstFragment : Fragment() {
+class ThirdFragment : Fragment () {
 
-    private var _binding: FragmentFirstBinding? = null
+
+    private var _binding: FragmentThirdBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        _binding = FragmentThirdBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -34,12 +32,8 @@ class FirstFragment : Fragment() {
 
 
 
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
-
-        binding.button.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
+        binding.button2.setOnClickListener {
+            findNavController().navigate(R.id.action_ThirdFragment_to_FirstFragment)
         }
     }
 
@@ -47,4 +41,5 @@ class FirstFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
